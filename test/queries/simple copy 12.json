@@ -1,0 +1,19 @@
+{
+    "title": "whitespace idstring",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "_professor",
+                "_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,36 @@
+{
+    "title": "TRANSFORMATION MAX",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallMax"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_title"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "overallMax": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_title":"work int health","overallMax":98.98},{"courses_title":"multimedia sys","overallMax":98.75},{"courses_title":"fam nrs pract","overallMax":98.58},{"courses_title":"educ stds autism","overallMax":98.8},{"courses_title":"dev el sk df&hrd","overallMax":98.45},{"courses_title":"cl pro prim care","overallMax":98.71},{"courses_title":"career planning","overallMax":99.19},{"courses_title":"assess lrn diffi","overallMax":98.7},{"courses_title":"algb topology i","overallMax":99.78}]
+}

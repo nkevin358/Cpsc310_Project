@@ -1,0 +1,19 @@
+{
+    "title": "Options missing order",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_professor",
+                "courses_avg"
+            ],
+            "ORER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

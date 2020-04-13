@@ -1,0 +1,20 @@
+{
+    "title": "decimal year",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_year":2020.1212
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "title": "TRANSFORMATION MIN",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallMin"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_title"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "overallMin": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_title":"work int health","overallMin":98.98},{"courses_title":"multimedia sys","overallMin":98.75},{"courses_title":"fam nrs pract","overallMin":98.5},{"courses_title":"educ stds autism","overallMin":98.58},{"courses_title":"dev el sk df&hrd","overallMin":98.45},{"courses_title":"cl pro prim care","overallMin":98.21},{"courses_title":"career planning","overallMin":99.19},{"courses_title":"assess lrn diffi","overallMin":98.08},{"courses_title":"algb topology i","overallMin":99.78}]
+}

@@ -1,0 +1,44 @@
+{
+    "title": "TRANSFORMATION 2 Apply keys",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "rooms_seats": 20
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_furniture",
+                "rooms_fullname",
+                "MIN",
+                "COUNT"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "rooms_furniture"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_furniture",
+                "rooms_fullname"
+            ],
+            "APPLY": [
+                {
+                    "MIN": {
+                        "MIN": "rooms_lat"
+                    }
+                },
+                {
+                    "COUNT": {
+                        "COUNT": "rooms_name"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_furniture":"Classroom-Moveable Tables & Chairs","rooms_fullname":"MacMillan","MIN":49.26114,"COUNT":11},{"rooms_furniture":"Classroom-Moveable Tables & Chairs","rooms_fullname":"Irving K Barber Learning Centre","MIN":49.26766,"COUNT":5},{"rooms_furniture":"Classroom-Movable Tablets","rooms_fullname":"Food, Nutrition and Health","MIN":49.26414,"COUNT":1},{"rooms_furniture":"Classroom-Movable Tablets","rooms_fullname":"Orchard Commons","MIN":49.26048,"COUNT":3},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Henry Angus","MIN":49.26486,"COUNT":3},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Biological Sciences","MIN":49.26479,"COUNT":2},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Irving K Barber Learning Centre","MIN":49.26766,"COUNT":4},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Jack Bell Building for the School of Social Work","MIN":49.2643,"COUNT":3},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Buchanan","MIN":49.26826,"COUNT":1},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"MacMillan","MIN":49.26114,"COUNT":1},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Forest Sciences Centre","MIN":49.26044,"COUNT":1},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"School of Population and Public Health","MIN":49.2642,"COUNT":3},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Orchard Commons","MIN":49.26048,"COUNT":1},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Pharmaceutical Sciences Building","MIN":49.26229,"COUNT":8},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_fullname":"Woodward (Instructional Resources Centre-IRC)","MIN":49.26478,"COUNT":7},{"rooms_furniture":"Classroom-Hybrid Furniture","rooms_fullname":"Orchard Commons","MIN":49.26048,"COUNT":1}]
+}

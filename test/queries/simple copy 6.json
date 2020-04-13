@@ -1,0 +1,19 @@
+{
+    "title": "GROUP of undefined",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "",
+                ""
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

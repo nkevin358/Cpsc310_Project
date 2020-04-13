@@ -1,0 +1,20 @@
+{
+    "title": "AND must be an non-empty array",
+    "query": {
+        "WHERE": {
+            "AND": {
+                "courses_avg":12,
+                "courses_avg":11
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_professor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

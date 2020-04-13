@@ -1,0 +1,22 @@
+{
+    "title": "ORDER keys does not match COLUMNS",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": ""
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": ["test"]
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,22 @@
+{
+    "title": "ORDER keys is not an array",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": ""
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": "not array"
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

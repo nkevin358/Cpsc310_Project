@@ -1,0 +1,19 @@
+{
+    "title": "wildcard idstring",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "$_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "*&_dept",
+                "$_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,20 @@
+{
+    "title": "nested testing invalid mkey for LT Gt",
+    "query": {
+        "WHERE": {
+            "OR":[
+                {"GT":{
+                "courses_id":97
+            }}, {"LT": {"courses_instructor": null}}, {"EQ":  {"courses_uuid":null}}]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

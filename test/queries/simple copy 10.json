@@ -1,0 +1,19 @@
+{
+    "title": "idstring with underscore",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses____avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses__dept",
+                "courses____avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

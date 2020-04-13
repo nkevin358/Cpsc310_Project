@@ -1,0 +1,17 @@
+{
+    "title": "GT must be Object",
+    "query": {
+        "WHERE": {
+            "GT": [
+                "courses_dept",
+                "courses_avg"
+            ]
+        },
+        "OPTIONS": {
+            "GT": {
+                "courses_avg":97
+            }
+    }},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

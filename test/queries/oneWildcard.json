@@ -1,0 +1,19 @@
+{
+    "title": "testing wildcard - *C",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept":"*C"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

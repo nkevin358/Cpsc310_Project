@@ -1,0 +1,17 @@
+{
+    "title": "Query on Rooms",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "rooms_seats":20
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":18},{"rooms_seats":12},{"rooms_seats":18},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":12},{"rooms_seats":10},{"rooms_seats":8},{"rooms_seats":16},{"rooms_seats":12},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":6},{"rooms_seats":6},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":8},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":16},{"rooms_seats":7},{"rooms_seats":7},{"rooms_seats":7},{"rooms_seats":14},{"rooms_seats":7},{"rooms_seats":7},{"rooms_seats":7},{"rooms_seats":7},{"rooms_seats":16},{"rooms_seats":12},{"rooms_seats":14},{"rooms_seats":14},{"rooms_seats":10},{"rooms_seats":10},{"rooms_seats":12},{"rooms_seats":10},{"rooms_seats":12},{"rooms_seats":16}]
+}

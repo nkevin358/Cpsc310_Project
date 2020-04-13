@@ -1,0 +1,36 @@
+{
+    "title": "TRANSFORMATION SUM",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "sum"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_title"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "sum": {
+                        "SUM": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_title":"work int health","sum":197.96},{"courses_title":"multimedia sys","sum":197.5},{"courses_title":"fam nrs pract","sum":394.16},{"courses_title":"educ stds autism","sum":493.48},{"courses_title":"dev el sk df&hrd","sum":196.9},{"courses_title":"cl pro prim care","sum":393.84},{"courses_title":"career planning","sum":99.19},{"courses_title":"assess lrn diffi","sum":295.14},{"courses_title":"algb topology i","sum":199.56}]
+}

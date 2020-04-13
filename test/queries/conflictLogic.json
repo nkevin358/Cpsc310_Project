@@ -1,0 +1,20 @@
+{
+    "title": "conflicting logic",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "GT":{"courses_avg": 98}
+            },{"LT":{"courses_avg":97}
+        }]},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+    ]
+}

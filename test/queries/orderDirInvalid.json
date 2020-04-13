@@ -1,0 +1,22 @@
+{
+    "title": "ORDER dir is invalid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": ""
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "LEFT",
+                "keys": ["courses_avg"]
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

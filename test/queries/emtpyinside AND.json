@@ -1,0 +1,19 @@
+{
+    "title": "empty statements inside AND",
+    "query": {
+        "WHERE": {
+            "AND": {
+                "NOT":{"IS":{}}
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

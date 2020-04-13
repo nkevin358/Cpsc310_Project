@@ -1,0 +1,11 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query2": "a more complex query on courses",
+    "query3": "test simple rooms",
+    "query4": "adding simple transformation",
+    "query5": "testing transformation with one layer",
+    "query6": "testing transformation with more than one layer",
+    "query7": "testing NOT"
+
+}
+
